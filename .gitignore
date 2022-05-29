@@ -1,2 +1,5 @@
 # Ignore VSCode
 .vscode/
+
+# Ignore test files
+test_*
