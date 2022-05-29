@@ -28,4 +28,5 @@ The contents of this repository are as follows
     - C++ implementation with GUI controls: [learnopencv.com](https://learnopencv.com/depth-perception-using-stereo-camera-python-c/)
     - Results and review: [adept.net.au](https://www.adept.net.au/news/newsletter/201211-nov/article_3D_stereo.shtml)
 - Triangulation
+    - Triangulation on [Wikipedia](https://en.wikipedia.org/wiki/Triangulation_(computer_vision))
     - Group triangulation on OpenCV through SFM: [docs](https://docs.opencv.org/4.x/d0/dbd/group__triangulation.html)
