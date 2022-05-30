@@ -17,6 +17,18 @@ Class 4 of 4 on Multi-View Geometry covered in RRC Summer School 2022. The follo
 
 The contents of this repository are as follows
 
+| S. No. | Item Name | Description |
+| :----- | :-------- | :---------- |
+| 1a | [stereo_to_depth.ipynb](./notebooks/stereo_to_depth.ipynb) | Convert stereo rectified images to point clouds |
+| 1b | [stereo_to_depth_tsukuba.ipynb](./notebooks/stereo_to_depth_tsukuba.ipynb) | Same thing as `1a`, but with `tsukuba` (see difference between BFMatcher) |
+| 2 | [triangulation.ipynb](./notebooks/triangulation.ipynb) | Triangulation of a single point |
+
+The repository also contains the following
+
+| S. No. | Item Name | Description |
+| :----- | :-------- | :---------- |
+| A | [Slides - MVG4.pptx](./Presentation/Slides%20-%20MVG4.pptx) | Presentation |
+
 ## References
 
 - RRC Summer School 2022
@@ -33,6 +45,16 @@ The contents of this repository are as follows
     - Optimizers
         - [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html#scipy.optimize.minimize) (using [SLSQP](https://docs.scipy.org/doc/scipy/reference/optimize.minimize-slsqp.html#optimize-minimize-slsqp))
         - [pyopt](http://www.pyopt.org/index.html) (using [SLSQP](http://www.pyopt.org/reference/optimizers.slsqp.html#pySLSQP))
+- PnP Algorithm
+    - PnP on [Wikipedia](https://en.wikipedia.org/wiki/Perspective-n-Point)
+    - PnP overview on [OpenCV docs](https://docs.opencv.org/4.x/d5/d1f/calib3d_solvePnP.html)
+    - P3P
+        - Earliest works (1999): [Linear N-Point Camera Pose Determination](https://hal.inria.fr/file/index/docid/590105/filename/Quan-pami99.pdf)
+        - Recent solution (2003): [Complete solution classification for the perspective-three-point problem](https://ieeexplore.ieee.org/document/1217599)
+        - Faster and more accurate (2018): [Lambda Twist: An Accurate Fast Robust Perspective Three Point (P3P) Solver](https://openaccess.thecvf.com/content_ECCV_2018/papers/Mikael_Persson_Lambda_Twist_An_ECCV_2018_paper.pdf)
+    - PnP
+        - Efficient O(n) PnP (2009): [EPnP: An Accurate O(n) Solution to the PnP Problem](https://link.springer.com/content/pdf/10.1007/s11263-008-0152-6.pdf)
+        - SQPnP - non-polynomial solver which casts PnP as non-linear quadratic problem - (2020): [A Consistently Fast and Globally Optimal Solution to the Perspective-n-Point Problem](https://www.ecva.net///papers/eccv_2020/papers_ECCV/html/1969_ECCV_2020_paper.php)
 - Other underlying theory
     - Understand camera intrinsic matrix: [towardsdatascience.com](https://towardsdatascience.com/camera-intrinsic-matrix-with-example-in-python-d79bf2478c12)
 
