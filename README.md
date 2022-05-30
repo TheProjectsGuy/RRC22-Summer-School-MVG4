@@ -30,3 +30,13 @@ The contents of this repository are as follows
 - Triangulation
     - Triangulation on [Wikipedia](https://en.wikipedia.org/wiki/Triangulation_(computer_vision))
     - Group triangulation on OpenCV through SFM: [docs](https://docs.opencv.org/4.x/d0/dbd/group__triangulation.html)
+    - Optimizers
+        - [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html#scipy.optimize.minimize) (using [SLSQP](https://docs.scipy.org/doc/scipy/reference/optimize.minimize-slsqp.html#optimize-minimize-slsqp))
+        - [pyopt](http://www.pyopt.org/index.html) (using [SLSQP](http://www.pyopt.org/reference/optimizers.slsqp.html#pySLSQP))
+- Other underlying theory
+    - Understand camera intrinsic matrix: [towardsdatascience.com](https://towardsdatascience.com/camera-intrinsic-matrix-with-example-in-python-d79bf2478c12)
+
+[![Developer TheProjectsGuy][dev-shield]][dev-profile-link]
+
+[dev-shield]: https://img.shields.io/badge/Developer-TheProjectsGuy-blue
+[dev-profile-link]: https://github.com/TheProjectsGuy
